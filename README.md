@@ -166,6 +166,15 @@ This project addresses these challenges by providing a deterministic, numeric-aw
 
 ## 🧰 Technology Stack
 
+| Layer | Technology |
+| :--- | :--- |
+| **Frontend** | React.js with TypeScript |
+| **Backend** | Python (Flask) |
+| **Database** | PostgreSQL |
+| **Authentication** | JWT |
+| **AI Model** | Google Gemini |
+| **Version Control** | GitHub |
+
 ### Console Application
 
 - **Core Language:** Python 3.x
