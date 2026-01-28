@@ -19,20 +19,16 @@ A deterministic data reconciliation system that accurately maps structured recor
 
 - [Abstract](#-abstract)
 - [Problem Statement](#-problem-statement)
-- [Who This Is For / Who This Is Not For](#-who-this-is-for--who-this-is-not-for)
-- [What This Project Covers](#-what-this-project-covers)
 - [Key Features](#-key-features)
 - [System Architecture](#-system-architecture)
 - [Technology Stack](#-technology-stack)
-- [Quick Start](#-quick-start)
 - [Repository Structure](#-repository-structure)
-- [Documentation](#-documentation)
-- [Key Principles](#-key-principles)
-- [Success Criteria](#-success-criteria)
-- [Development & Quality Assurance](#️-development--quality-assurance)
 - [Contributing](#-contributing)
+- [Organization](#-organization)
 - [About & Community](#-about--community)
+- [Attribution](#-attribution)
 - [License](#-license)
+- [Acknowledgements](#-acknowledgements)
 
 ---
 
@@ -181,7 +177,7 @@ The web-based frontend has been implemented with the following architecture:
                         │ JWT Authentication
                         ↓
 ┌─────────────────────────────────────────────────────────────────┐
-│                    Application Layer                             │
+│                    Application Layer                            │
 │                      Flask REST API                             │
 │  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐           │
 │  │ Auth Service │  │  Matching    │  │   AI/ML      │           │
@@ -192,12 +188,12 @@ The web-based frontend has been implemented with the following architecture:
             │ ORM/SQL                      │ API Calls
             ↓                              ↓
 ┌───────────────────────┐    ┌──────────────────────────────────┐
-│     Data Layer         │    │      AI/ML Service Layer         │
-│   PostgreSQL           │    │   GenAI + ML Models              │
+│     Data Layer        │    │      AI/ML Service Layer         │
+│   PostgreSQL          │    │   GenAI + ML Models              │
 │                       │    │                                  │
-│  • Users              │    │  • Explanation Generation         │
+│  • Users              │    │  • Explanation Generation        │
 │  • Jobs               │    │  • Confidence Analysis           │
-│  • Match Results      │    │  • Feature Engineering            │
+│  • Match Results      │    │  • Feature Engineering           │
 │  • Audit Logs         │    │                                  │
 └───────────────────────┘    └──────────────────────────────────┘
 ```
