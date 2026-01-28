@@ -2,7 +2,7 @@
 
 [![License](https://img.shields.io/badge/License-MIT-purple)](LICENSE)
 [![Status](https://img.shields.io/badge/Status-Active-success)](https://github.com/Srivari-Hema-SSPL-2026/deterministic-data-reconciliation-system)
-[![Architecture](https://img.shields.io/badge/Architecture-N--Tier-FF6B35)](docs/05_architecture_plan.md)
+[![Architecture](https://img.shields.io/badge/Architecture-N--Tier-FF6B35)](docs/diagrams/system-architecture.png)
 [![Python](https://img.shields.io/badge/Python-3.12.10-ABCDEF?logo=python&logoColor=white)](https://www.python.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-pink?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=white)](https://react.dev/)
@@ -17,18 +17,18 @@ A deterministic data reconciliation system that accurately maps structured recor
 
 ## 📑 Table of Contents
 
-- [Abstract](#-abstract)
-- [Problem Statement](#-problem-statement)
-- [Key Features](#-key-features)
-- [System Architecture](#-system-architecture)
-- [Technology Stack](#-technology-stack)
-- [Repository Structure](#-repository-structure)
-- [Contributing](#-contributing)
-- [Organization](#-organization)
-- [About & Community](#-about--community)
-- [Attribution](#-attribution)
-- [License](#-license)
-- [Acknowledgements](#-acknowledgements)
+- [Abstract](#abstract)
+- [Problem Statement](#problem-statement)
+- [Key Features](#key-features)
+- [System Architecture](#system-architecture)
+- [Technology Stack](#technology-stack)
+- [Repository Structure](#repository-structure)
+- [Contributing](#contributing)
+- [Organization](#organization)
+- [About & Community](#about--community)
+- [Attribution](#attribution)
+- [License](#license)
+- [Acknowledgements](#acknowledgements)
 
 ---
 
@@ -162,8 +162,6 @@ This project addresses these challenges by providing a deterministic, numeric-aw
 └───────────────────────┘    └──────────────────────────────────┘
 ```
 
-**Key Principle:** The deterministic matching engine remains the authoritative source of truth. AI/ML services provide supportive augmentation (explanations and confidence analysis) but never override matching decisions.
-
 ---
 
 ## 🧰 Technology Stack
@@ -200,29 +198,26 @@ This project addresses these challenges by providing a deterministic, numeric-aw
 
 ## 📂 Repository Structure
 
-> **📋 Single Source of Truth**: The complete and up-to-date repository structure is maintained in [`docs/08_repository_structure.md`](docs/08_repository_structure.md). This file should be referenced for the authoritative structure.
+> **📋 Single Source of Truth**: The repository structure is maintained in [`docs/02_repository_structure.md`](docs/02_repository_structure.md).
 
 **Quick Overview:**
 
 ```text
 deterministic-data-reconciliation-system/
-├── src/                   # Source code
-│   ├── console/           # Console application
-│   │   ├── main.py        # Main entry point
-│   │   ├── config/        # Configuration
-│   │   ├── fuzzy_matcher/ # Core matching logic
-│   │   ├── tests/         # Console application tests
-│   │   ├── requirements.txt # Dependencies
-│   │   ├── run_pipeline.py # Main execution script
-│   │   └── run.ps1        # PowerShell runner
-│   ├── backend/           # Flask REST API backend
-│   └── frontend/           # React.js frontend
-├── docs/                  # Comprehensive project documentation
-├── data/                  # Data files (input/output)
-└── tools/                 # Utility scripts and automation
+├── docs/                   # Documentation and reports
+│   ├── 01_abstract.md
+│   ├── 02_repository_structure.md
+│   ├── diagrams/
+│   ├── images/
+│   └── reports/
+├── src/                    # Application source (currently scaffolded)
+│   ├── backend/
+│   └── frontend/
+├── pyproject.toml
+└── README.md
 ```
 
-For the complete repository structure with all file names and details, see: **[`docs/08_repository_structure.md`](docs/08_repository_structure.md)**
+For the complete repository structure with all file names and details, see: **[`docs/02_repository_structure.md`](docs/02_repository_structure.md)**
 
 ---
 
